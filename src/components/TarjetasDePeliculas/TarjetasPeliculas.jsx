@@ -1,12 +1,12 @@
 import React from 'react';
 import './TarjetasPeliculas.css'
 
-const TarjetasPeliculas = (props) => {
+const TarjetasPeliculas = ({id,url,name}) => {
   return (
 
-    <div className='tarjeta' key={props}>
-       <img className="portada" src={props.url} alt={props.name} />
-       <h2 className='tituloPeliculas'>{props.name}</h2>
+    <div className='tarjeta' key={id}>
+       <img className="portada" src={url} alt={name} />
+       <h2 className='tituloPeliculas'>{name}</h2>
     </div>
   )
 }
